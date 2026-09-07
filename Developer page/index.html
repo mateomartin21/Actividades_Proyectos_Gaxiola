@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Developer page</title>
 </head>
 <body>
     <header>
         <img src="https://media.sitioandino.com.ar/p/b53ecd32fbcb7eb3186c7fc4bac37e16/adjuntos/335/imagenes/000/881/0000881486/1200x630/smart/lionel-messi.png" alt="">
-        <h1>Mateo Emanuel Martin Tec </h1>
+        <h1 class = "my-title">Mateo Emanuel Martin Tec <span>Developer</span></h1>
     </header>
     <nav>
         <a href="#">Inicio</a>
@@ -42,6 +47,32 @@
     </main>
     <section>
         <h2>Contacto</h2>
+            <form>
+                <fieldset>
+                    <legend>
+                        Llena tus datos de contacto
+                    </legend>
+                    <div>
+                        <label>Nombre completo</label>
+                        <input type="text" placeholder="Tu nombre">
+                    </div>
+                    <div>
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="Tu teléfono">
+                    </div>
+                    <div>
+                        <label>E-mail</label>
+                        <input type="email" placeholder="Tu correo electrónico">
+                    </div>
+                    <div>
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" placeholder="Enviar">
+                    </div>
+                </fieldset>
+            </form>
     </section>
 
     <footer>
