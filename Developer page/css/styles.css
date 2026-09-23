@@ -116,8 +116,10 @@ h3 {
   align-items: flex-end;
 }
 
-#pene{
-    color: red
+#pin{
+    color: red;
+    width: 70px;
+    height: auto;
     
 }
  
@@ -132,6 +134,7 @@ h3 {
   border-radius: 0.5rem;
   width: 90%;
   text-align: center;
+  border: none;
 }
  
 @media (min-width: 768px) {
@@ -139,4 +142,61 @@ h3 {
     width: auto;
   }
 }
- 
+
+/*Mis servicios*/
+@media (min-width: 768px){
+  .servicios{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+  }
+}
+
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.servicio h3 {
+  color: var(--secundario);
+  font-weight: bold;
+
+}
+
+.servicio p{
+  line-height: 2;
+  text-align: center;
+}
+
+.servicio .iconos{
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg{
+  width: 100px;
+  height: auto;
+}
+
+/*contacto*/
+.boton:hover{
+  cursor: pointer;
+
+}
+
+.formulario{
+  background-color: var(--primario);
+  width: min(60rem,100%);
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  
+}
+.formulario fieldset{
+  border: none;
+}
